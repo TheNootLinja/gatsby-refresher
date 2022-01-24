@@ -1,0 +1,16 @@
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+img {
+  padding: 10px;
+  background-color: pink;
+}

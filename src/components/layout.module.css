@@ -4,9 +4,9 @@
   font-family: sans-serif;
 }
 
-.heading {
+/* .heading {
   color: #7f21fa;
-}
+} */
 
 .nav-links {
   display: flex;
@@ -16,10 +16,6 @@
 
 .nav-link-item {
   padding-right: 2rem;
-}
-
-.nav-link-text {
-  color: white;
 }
 
 .site-title {
