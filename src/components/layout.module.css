@@ -1,12 +1,8 @@
 .container {
   margin: auto;
-  max-width: 500px;
+  max-width: 900px;
   font-family: sans-serif;
 }
-
-/* .heading {
-  color: #7f21fa;
-} */
 
 .nav-links {
   display: flex;

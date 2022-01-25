@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../../components/layout';
 import './index.module.css';
@@ -10,14 +9,17 @@ const BlogPage = ({ data }) => {
     <Layout pageTitle="My Blog Posts">
       {data.allMdx.nodes.map((node) => (
         <article key={node.id}>
-          <h2>
-            <Link to={`/blog/${node.slug}`}>{node.frontmatter.title}</Link>
-          </h2>
-          <p>Posted: {node.frontmatter.date}</p>
-          <GatsbyImage
-            image={node.frontmatter.hero_image.childImageSharp.gatsbyImageData}
-            alt={node.frontmatter.hero_image_alt}
-          />
+          <Link to={`/blog/${node.slug}`}>
+            <h2>{node.frontmatter.title}</h2>
+            <p>Posted: {node.frontmatter.date}</p>
+            <GatsbyImage
+              className="hero-image"
+              image={
+                node.frontmatter.hero_image.childImageSharp.gatsbyImageData
+              }
+              alt={node.frontmatter.hero_image_alt}
+            />
+          </Link>
         </article>
       ))}
     </Layout>
@@ -37,7 +39,7 @@ export const query = graphql`
           title
           hero_image {
             childImageSharp {
-              gatsbyImageData(width: 500)
+              gatsbyImageData(width: 900, height: 300)
               id
             }
           }
