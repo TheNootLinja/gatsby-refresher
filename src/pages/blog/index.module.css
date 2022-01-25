@@ -1,9 +1,11 @@
 h2 {
   margin: 0;
+  margin-left: 5px;
 }
 
 p {
   margin: 0;
+  margin-left: 30px;
   color: white;
 }
 
@@ -13,9 +15,6 @@ article {
 
 img {
   border-radius: 10px;
-  position: absolute;
-  top: -100px;
-  left: -100px;
 }
 
 .hero-image {

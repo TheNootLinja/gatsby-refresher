@@ -12,13 +12,13 @@ const BlogPage = ({ data }) => {
           <Link to={`/blog/${node.slug}`}>
             <h2>{node.frontmatter.title}</h2>
             <p>Posted: {node.frontmatter.date}</p>
-            <GatsbyImage
-              className="hero-image"
-              image={
-                node.frontmatter.hero_image.childImageSharp.gatsbyImageData
-              }
-              alt={node.frontmatter.hero_image_alt}
-            />
+              <GatsbyImage
+                className="hero-image"
+                image={
+                  node.frontmatter.hero_image.childImageSharp.gatsbyImageData
+                }
+                alt={node.frontmatter.hero_image_alt}
+              />
           </Link>
         </article>
       ))}
