@@ -1,8 +1,17 @@
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .container {
-  padding-bottom: 40px;
   margin: auto;
-  max-width: 900px;
   font-family: sans-serif;
+  padding-bottom: 45px;
+}
+
+.content-container {
+  max-width: 900px;
 }
 
 .nav-links {
@@ -15,9 +24,27 @@
   padding-right: 2rem;
 }
 
+.nav-link-text {
+  color: white;
+}
+
+.nav-link-text:hover {
+  color: black;
+}
+
 .site-title {
   font-size: 3rem;
-  color: gray;
+  color: #7f21fa;
   font-weight: 700;
-  margin: 3rem 0;
+  margin: 1.5rem 0 0 1.5rem;
 }
+
+.nav-bar {
+  background-color: #7f21fa;
+  padding-left: 30px;
+}
+
+/* Write styling for mobile */
+/* Site title size too big */
+
+/* Write styling for tablet */
