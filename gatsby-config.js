@@ -15,5 +15,13 @@ module.exports = {
     },
     'gatsby-plugin-mdx',
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Neonderthaw', 'Commissioner', 'Fraunces'],
+        },
+      },
+    },
   ],
 };
