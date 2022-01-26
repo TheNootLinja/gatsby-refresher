@@ -7,11 +7,12 @@
 .container {
   margin: auto;
   font-family: sans-serif;
-  padding-bottom: 45px;
 }
 
-.content-container {
+.content-container p {
+  width: 90%;
   max-width: 900px;
+  margin: auto;
 }
 
 .nav-links {
@@ -26,25 +27,48 @@
 
 .nav-link-text {
   color: white;
+  transition: all 0.2s;
+  transition-timing-function: ease-in;
 }
 
 .nav-link-text:hover {
-  color: black;
+  text-shadow: 0 0 7px rgb(255, 158, 242), 0 0 10px rgb(255, 158, 242),
+    0 0 21px rgb(255, 158, 242), 0 0 42px rgb(255, 158, 242),
+    0 0 82px rgb(247, 0, 255);
 }
 
 .site-title {
   font-size: 3rem;
-  color: #7f21fa;
+  /* color: #7f21fa; */
+  color: #fff;
   font-weight: 700;
-  margin: 1.5rem 0 0 1.5rem;
+  margin: 1.5rem 0 15px 1.5rem;
+  font-family: 'Neonderthaw', cursive;
+  text-shadow: 0 0 7px rgb(255, 158, 242), 0 0 10px rgb(255, 158, 242),
+    0 0 21px rgb(255, 158, 242), 0 0 42px rgb(255, 158, 242),
+    0 0 82px rgb(247, 0, 255), 0 0 92px rgb(247, 0, 255);
+  width: 90%;
+}
+
+.heading {
+  margin-left: 10px;
 }
 
 .nav-bar {
-  background-color: #7f21fa;
+  background-color: rgb(51, 51, 51);
   padding-left: 30px;
+  box-shadow: inset 0 0px 2px #000000;
 }
 
 /* Write styling for mobile */
 /* Site title size too big */
-
+@media only screen and (max-width: 475px) {
+  .site-title {
+    font-size: 2rem;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* Write styling for tablet */

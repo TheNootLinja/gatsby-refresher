@@ -10,7 +10,9 @@
 }
 
 article {
+  margin: auto;
   margin-bottom: 30px;
+  /* max-width: 95%; */
 }
 
 .hero-image {
@@ -18,3 +20,9 @@ article {
   position: relative;
   overflow: hidden;
 }
+
+/* @media only screen and (max-width: 1050px) {
+  article {
+    width
+  }
+} */
