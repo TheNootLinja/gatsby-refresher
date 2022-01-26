@@ -2,16 +2,16 @@ body,
 html {
   background-color: #120458;
   color: white;
-  width: 100%;
+  width: 100vw;
   margin: 0px;
   padding: 0px;
   font-family: 'Commissioner', sans-serif;
-  /* border: 1px solid white; */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
-  /* color: #7f21fa; */
 }
 
 h1,
