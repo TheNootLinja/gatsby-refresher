@@ -1,12 +1,13 @@
 .blog-title {
   margin: 0;
   margin-left: 5px;
+  color: #fff;
 }
 
 .blog-date {
   margin: 0;
   margin-left: 30px;
-  color: white;
+  color: rgb(150, 150, 150);
 }
 
 article {

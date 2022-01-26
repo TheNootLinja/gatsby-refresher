@@ -9,7 +9,10 @@ import {
   navLinkText,
   siteTitle,
   contentContainer,
-  navBar
+  navBar,
+  navDivider,
+  switchStyle,
+  sliderStyle
 } from './layout.module.css';
 import '../styles/global.css';
 
@@ -27,6 +30,10 @@ const Layout = ({ pageTitle, children }) => {
     <div className={parentContainer}>
         <title>{pageTitle}</title>
         <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+        {/* <label className={switchStyle}>
+          <input type="checkbox"/>
+          <span className={sliderStyle}></span>
+        </label> */}
         <nav className={navBar}>
           <ul className={navLinks}>
             <li className={navLinkItem}>
@@ -35,9 +42,15 @@ const Layout = ({ pageTitle, children }) => {
               </Link>
             </li>
             <li className={navLinkItem}>
+              <div className={navDivider}></div>
+            </li>
+            <li className={navLinkItem}>
               <Link className={navLinkText} to="/blog">
                 Blog
               </Link>
+            </li>
+            <li className={navLinkItem}>
+              <div className={navDivider}></div>
             </li>
             <li className={navLinkItem}>
               <Link className={navLinkText} to="/about">
