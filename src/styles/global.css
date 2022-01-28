@@ -7,7 +7,7 @@ html {
   padding: 0px;
   font-family: 'Commissioner', sans-serif;
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 a {
