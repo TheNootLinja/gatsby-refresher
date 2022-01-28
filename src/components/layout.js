@@ -6,6 +6,7 @@ import {
   heading,
   navLinks,
   navLinkItem,
+  selectedNavLinkItem,
   navLinkText,
   siteTitle,
   contentContainer,
@@ -36,7 +37,7 @@ const Layout = ({ pageTitle, children }) => {
         </label> */}
         <nav className={navBar}>
           <ul className={navLinks}>
-            <li className={navLinkItem}>
+            <li className={pageTitle === 'Home Page' ? selectedNavLinkItem : navLinkItem}>
               <Link className={navLinkText} to="/">
                 Home
               </Link>
@@ -44,7 +45,7 @@ const Layout = ({ pageTitle, children }) => {
             <li className={navLinkItem}>
               <div className={navDivider}></div>
             </li>
-            <li className={navLinkItem}>
+            <li className={pageTitle === 'My Blog Posts' ? selectedNavLinkItem : navLinkItem}>
               <Link className={navLinkText} to="/blog">
                 Blog
               </Link>
@@ -52,7 +53,7 @@ const Layout = ({ pageTitle, children }) => {
             <li className={navLinkItem}>
               <div className={navDivider}></div>
             </li>
-            <li className={navLinkItem}>
+            <li className={pageTitle === 'About Me' ? selectedNavLinkItem : navLinkItem}>
               <Link className={navLinkText} to="/about">
                 About
               </Link>
@@ -61,7 +62,7 @@ const Layout = ({ pageTitle, children }) => {
         </nav>
       <div className={container}>
         <main>
-          <h1 className={heading}>{pageTitle}</h1>
+          {/* <h1 className={heading}>{pageTitle}</h1> */}
           <div className={contentContainer}>
             {children}
           </div>

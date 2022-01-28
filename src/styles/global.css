@@ -2,12 +2,11 @@ body,
 html {
   background-color: #120458;
   color: white;
-  width: 100vw;
+  width: 100%;
   margin: 0px;
   padding: 0px;
   font-family: 'Commissioner', sans-serif;
   box-sizing: border-box;
-  /* overflow: hidden; */
 }
 
 a {
