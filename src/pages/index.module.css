@@ -1,0 +1,12 @@
+.homepage-img {
+  margin-top: 10px;
+  height: 300px;
+  width: 100%;
+}
+
+.content-container {
+  width: 95%;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+  font-size: 1.25rem;
+}
