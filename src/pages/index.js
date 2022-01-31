@@ -4,7 +4,6 @@ import Layout from '../components/layout';
 import Footer from '../components/footer/footer'
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import { homepageImg, contentContainer, pageHeader, pageHeaderSub, blogTitle, blogDate, heroImage, blogSectionHeader, sectionDivider, imageContainer } from './index.module.css';
-import { onInitialClientRender } from 'gatsby-plugin-web-font-loader';
 
 const IndexPage = ({ data }) => {
   const recentBlogs = data.allMdx.nodes;
