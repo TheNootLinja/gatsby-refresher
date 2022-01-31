@@ -31,10 +31,6 @@ const Layout = ({ pageTitle, children }) => {
     <div className={parentContainer}>
         <title>{pageTitle}</title>
         <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-        {/* <label className={switchStyle}>
-          <input type="checkbox"/>
-          <span className={sliderStyle}></span>
-        </label> */}
         <nav className={navBar}>
           <ul className={navLinks}>
             <li className={pageTitle === 'Home Page' ? selectedNavLinkItem : navLinkItem}>
