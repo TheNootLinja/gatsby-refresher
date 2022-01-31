@@ -48,7 +48,8 @@
   color: #fff;
   font-weight: 700;
   margin: 1.5rem 0 15px 15vw;
-  font-family: 'Neonderthaw', cursive;
+  /* font-family: 'Neonderthaw', cursive; */
+  font-family: 'Permanent Marker', cursive;
   text-shadow: 0 0 7px #ff00a0, 0 0 10px #fe75fe, 0 0 21px #fe75fe,
     0 0 42px #fe75fe;
   max-width: 500px;

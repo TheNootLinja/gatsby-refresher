@@ -19,7 +19,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Neonderthaw', 'Commissioner', 'Fraunces'],
+          families: ['Neonderthaw', 'Commissioner', 'Fraunces','Permanent Marker'],
         },
       },
     },

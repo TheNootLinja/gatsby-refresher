@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Footer from '../components/footer/footer'
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
-import { homepageImg, contentContainer, pageHeader, pageHeaderSub, blogTitle, blogDate, heroImage, blogSectionHeader, sectionDivider } from './index.module.css';
+import { homepageImg, contentContainer, pageHeader, pageHeaderSub, blogTitle, blogDate, heroImage, blogSectionHeader, sectionDivider, imageContainer } from './index.module.css';
 import { onInitialClientRender } from 'gatsby-plugin-web-font-loader';
 
 const IndexPage = ({ data }) => {
@@ -11,14 +11,16 @@ const IndexPage = ({ data }) => {
   return (
       <div className="index-page">
         <Layout pageTitle="Home Page">
-          <StaticImage
-            className={homepageImg}
-            alt="Picture of my 2018 Colorado ZR2"
-            src="../images/neoncity.jpeg"
-            />
-          <div className={contentContainer}>
-          <h1 className={pageHeader}>Coolest Blog on The Internet</h1>
+          <div className={imageContainer}>
+            <StaticImage
+              className={homepageImg}
+              alt="Picture of my 2018 Colorado ZR2"
+              src="../images/neoncity.jpeg"
+              />
+            <h1 className={pageHeader}>Coolest Blog on The Internet?</h1>
           <p className={pageHeaderSub}>(Maybe best you've seen today?)</p>
+          </div>
+          <div className={contentContainer}>
           <h2 className={blogSectionHeader}>Recent Posts</h2>
           <div className={sectionDivider}></div>
           {data.allMdx.nodes.map((node) => (
