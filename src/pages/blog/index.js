@@ -2,8 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../../components/layout';
-import Footer from '../../components/footer/footer';
-import {blogDate, blogTitle, heroImage} from './index.module.css';
+import { blogDate, blogTitle, heroImage } from './index.module.css';
 
 const BlogPage = ({ data }) => {
   return (

@@ -9,11 +9,11 @@
   font-family: sans-serif;
 }
 
-.content-container p {
+/* .content-container p {
   width: 90%;
   max-width: 900px;
   margin: auto;
-}
+} */
 
 .nav-links {
   display: flex;
@@ -48,7 +48,8 @@
   color: #fff;
   font-weight: 700;
   margin: 1.5rem 0 15px 15vw;
-  font-family: 'Neonderthaw', cursive;
+  /* font-family: 'Neonderthaw', cursive; */
+  font-family: 'Permanent Marker', cursive;
   text-shadow: 0 0 7px #ff00a0, 0 0 10px #fe75fe, 0 0 21px #fe75fe,
     0 0 42px #fe75fe;
   max-width: 500px;
@@ -62,9 +63,8 @@
 .nav-bar {
   background-color: #7a04eb;
   padding-left: 30px;
-  box-shadow: inset 0 0px 2px #000000;
+  box-shadow: inset 0 20px 20px -20px #ff00a0;
   transform-origin: center;
-  /* transform: rotate(-1deg); */
 }
 
 .nav-divider {

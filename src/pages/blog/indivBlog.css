@@ -4,5 +4,11 @@
 
 .indiv-hero-img {
   margin: auto;
-  height: 400px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 475px) {
+  .indiv-hero-img {
+    height: 150px;
+  }
 }
