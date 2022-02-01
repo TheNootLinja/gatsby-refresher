@@ -41,12 +41,17 @@ article {
   margin: auto;
   margin-bottom: 30px;
   margin-top: 20px;
+  width: fit-content;
 }
 
 .hero-image {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+}
+
+.bloglist-container {
+  width: 100%;
 }
 
 @media only screen and (max-width: 980px) {
@@ -68,9 +73,6 @@ article {
 
   .section-divider {
     margin-bottom: 20px;
-  }
-
-  .blog-section-header {
   }
 
   .bloglist-page-img {
