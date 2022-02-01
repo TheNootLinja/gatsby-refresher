@@ -23,10 +23,11 @@
   text-align: center;
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
 }
 
 .page-header-sub {
@@ -39,6 +40,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  width: 100%;
 }
 
 .text-content {
@@ -92,13 +95,34 @@ article:first-of-type {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 980px) {
+  .page-header {
+    font-size: 4rem;
+  }
+
+  .page-header-sub {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .page-header {
+    font-size: 3rem;
+  }
+
+  .page-header-sub {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .homepage-img {
     height: 125px;
   }
 
   .page-header {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    top: 50%;
   }
 
   .page-header-sub {

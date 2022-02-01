@@ -1,13 +1,21 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../../components/layout';
-import { blogDate, blogTitle, heroImage } from './index.module.css';
+import { blogDate, blogTitle, heroImage, imageContainer, bloglistPageImg, pageHeader } from './index.module.css';
 
 const BlogPage = ({ data }) => {
   return (
     <div className="blog-page">
       <Layout pageTitle="My Blog Posts">
+        <div className={imageContainer}>
+            <StaticImage
+              className={bloglistPageImg}
+              alt="Bridge over water lit up with neon lighting"
+              src="../../images/aboutpg.jpg"
+            />
+            <h1 className={pageHeader}>What you came for</h1>
+          </div>
         {data.allMdx.nodes.map((node) => (
           <article key={node.id}>
             <Link to={`/blog/${node.slug}`}>

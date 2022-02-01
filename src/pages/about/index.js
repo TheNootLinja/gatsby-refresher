@@ -1,18 +1,31 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../../components/layout';
+import { aboutContainer, aboutPageImg, imageContainer, pageHeader } from './about.module.css';
 
 const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
-      <div className="about-container">
+      <div className={imageContainer}>
+        <StaticImage
+          className={aboutPageImg}
+          alt="Bridge over water lit up with neon lighting"
+          src="../../images/aboutpg.jpg"
+        />
+        <h1 className={pageHeader}>About the Blog</h1>
+      </div>
+      <div className={aboutContainer}>
         {/* Need photo for top of this page */}
         <p className="about-content">
-        My name is Bianca, and I run A Pretty Cool Blog! I live in Chicago and love everything there is about the night 
-        life in such a big city. On my blog I write about everything from night photography tips to some lesser known 
-        spots in the city I love (only some, you've gotta put in some work exploring like I did!). My hope is that from
-        reading my blogs, you will get the same itch to explore that drove me to moving here. I want you to think of
-        exploring the city you live in just as you would a forest, a mountain, or even a new park. Nature isn't the only
-        place is the world with beautiful views.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet posuere elit, 
+        sit amet mollis turpis varius a. Ut at ante quis tellus egestas feugiat id at tortor. 
+        Proin vitae efficitur odio, eu facilisis sem. Fusce eu maximus purus. Maecenas vulputate 
+        venenatis fermentum. Praesent massa nisl, rutrum id sapien eget, semper porttitor turpis. 
+        Duis ultricies mauris a purus viverra sagittis. Donec semper in nunc sed euismod. Donec 
+        rhoncus lobortis ex non dignissim. Nullam pharetra turpis eros, lacinia volutpat ex semper 
+        quis. Mauris in lorem vitae urna accumsan semper. Pellentesque tincidunt ultrices risus quis 
+        pulvinar. Nunc luctus egestas felis non consequat. Donec sed lobortis felis. Donec purus enim, 
+        gravida non vestibulum id, hendrerit eu dui.
         </p>
       </div>
     </Layout>
