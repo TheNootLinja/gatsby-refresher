@@ -12,8 +12,7 @@ import {
   contentContainer,
   navBar,
   navDivider,
-  switchStyle,
-  sliderStyle
+  hamburgerContainer
 } from './layout.module.css';
 import '../styles/global.css';
 
@@ -30,8 +29,13 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div className={parentContainer}>
         <title>{pageTitle}</title>
-        <header className={siteTitle}>{data.site.siteMetadata.title}</header>
         <nav className={navBar}>
+        <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+        <div className={hamburgerContainer}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
           <ul className={navLinks}>
             <li className={pageTitle === 'Home Page' ? selectedNavLinkItem : navLinkItem}>
               <Link className={navLinkText} to="/">
