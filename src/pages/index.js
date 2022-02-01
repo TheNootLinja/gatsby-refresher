@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
               alt="Picture of my 2018 Colorado ZR2"
               src="../images/neoncity.jpeg"
               />
-            <h1 className={pageHeader}>Coolest Blog on The Internet?</h1>
+            <h1 className={pageHeader}>Coolest Blog?</h1>
           <p className={pageHeaderSub}>(Maybe best you've seen today?)</p>
           </div>
           <div className={contentContainer}>

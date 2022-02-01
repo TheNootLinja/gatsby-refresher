@@ -27,7 +27,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Permanent Marker', cursive;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .page-header-sub {
@@ -97,7 +97,7 @@ article:first-of-type {
 
 @media only screen and (max-width: 980px) {
   .page-header {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .page-header-sub {
@@ -107,7 +107,7 @@ article:first-of-type {
 
 @media only screen and (max-width: 750px) {
   .page-header {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .page-header-sub {
@@ -121,7 +121,8 @@ article:first-of-type {
   }
 
   .page-header {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    top: 50%;
   }
 
   .page-header-sub {

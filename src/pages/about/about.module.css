@@ -1,6 +1,7 @@
 .about-container {
   max-width: 900px;
   padding: 0 10px 0 10px;
+  margin: auto;
 }
 
 .image-container {
