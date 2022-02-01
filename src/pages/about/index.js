@@ -1,11 +1,20 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../../components/layout';
-import {} from './about.module.css';
+import { aboutContainer, aboutPageImg, imageContainer, pageHeader } from './about.module.css';
 
 const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
-      <div className="about-container">
+      <div className={imageContainer}>
+      <StaticImage
+        className={aboutPageImg}
+        alt="Bridge over water lit up with neon lighting"
+        src="../../images/aboutpg.jpg"
+      />
+      <h1 className={pageHeader}>About the Blog</h1>
+      </div>
+      <div className={aboutContainer}>
         {/* Need photo for top of this page */}
         <p className="about-content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet posuere elit, 
