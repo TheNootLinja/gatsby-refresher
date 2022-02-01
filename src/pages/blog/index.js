@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../../components/layout';
-import { blogDate, blogTitle, heroImage, imageContainer, bloglistPageImg, pageHeader } from './index.module.css';
+import { bloglistContainer, blogDate, blogTitle, heroImage, imageContainer, bloglistPageImg, pageHeader } from './index.module.css';
 
 const BlogPage = ({ data }) => {
   return (
@@ -16,21 +16,23 @@ const BlogPage = ({ data }) => {
             />
             <h1 className={pageHeader}>What you came for</h1>
           </div>
-        {data.allMdx.nodes.map((node) => (
-          <article key={node.id}>
-            <Link to={`/blog/${node.slug}`}>
-              <h2 className={blogTitle}>{node.frontmatter.title}</h2>
-              <p className={blogDate}>Posted: {node.frontmatter.date}</p>
-              <GatsbyImage
-                className={heroImage}
-                image={
-                  node.frontmatter.hero_image.childImageSharp.gatsbyImageData
-                }
-                alt={node.frontmatter.hero_image_alt}
-              />
-            </Link>
-          </article>
-        ))}
+          <div className={bloglistContainer}>
+            {data.allMdx.nodes.map((node) => (
+              <article key={node.id}>
+                <Link to={`/blog/${node.slug}`}>
+                  <h2 className={blogTitle}>{node.frontmatter.title}</h2>
+                  <p className={blogDate}>Posted: {node.frontmatter.date}</p>
+                  <GatsbyImage
+                    className={heroImage}
+                    image={
+                      node.frontmatter.hero_image.childImageSharp.gatsbyImageData
+                    }
+                    alt={node.frontmatter.hero_image_alt}
+                  />
+                </Link>
+              </article>
+            ))}
+          </div>
       </Layout>
     </div>
   );
