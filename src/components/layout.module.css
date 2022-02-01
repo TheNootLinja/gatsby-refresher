@@ -83,13 +83,13 @@
 .hamburger-container {
   padding-top: 10px;
   display: none;
-  display: flex;
   margin-right: 20px;
   height: 45px;
   width: 45px;
 }
 
 .hamburger-container div {
+  /* display: none; */
   height: 8px;
   width: 40px;
   margin-bottom: 4px;
@@ -146,6 +146,9 @@
   }
 
   .hamburger-container {
-    display: inline;
+    display: block;
   }
+  /* .hamburger-container div {
+    display: block;
+  } */
 }

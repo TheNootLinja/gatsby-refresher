@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
           {data.allMdx.nodes.map((node) => (
           <article key={node.id}>
             <Link to={`/blog/${node.slug}`}>
-              <h2 className={blogTitle}>{node.frontmatter.title}</h2>
+              <h3 className={blogTitle}>{node.frontmatter.title}</h3>
               <p className={blogDate}>Posted: {node.frontmatter.date}</p>
               <GatsbyImage
                 className={heroImage}
