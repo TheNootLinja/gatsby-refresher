@@ -1,0 +1,28 @@
+.collapsible-nav {
+  height: 200px;
+  width: 100%;
+  background: #7a04eb;
+  position: fixed;
+  top: 45px;
+  z-index: 2;
+  border-radius: 0 0 40px 40px;
+}
+
+.nav-item-list {
+  list-style: none;
+  margin: 20px auto 0 auto;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 15px auto 0 auto;
+  text-align: center;
+  width: 300px;
+  font-size: 2rem;
+  text-shadow: 0 0 7px #ff00a0, 0 0 10px #fe75fe, 0 0 21px #fe75fe,
+    0 0 42px #fe75fe;
+}
+
+.nav-link {
+  color: white;
+}

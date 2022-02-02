@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+
+import CollapsibleNav from './CollapsibleNav/collapsiblenav';
+
 import {
   parentContainer,
   container,
@@ -17,6 +20,7 @@ import {
 import '../styles/global.css';
 
 const Layout = ({ pageTitle, children }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const data = useStaticQuery(graphql`
     query MyQuery {
       site {
@@ -33,7 +37,7 @@ const Layout = ({ pageTitle, children }) => {
         <Link to="/">
           <header className={siteTitle}>{data.site.siteMetadata.title}</header>
         </Link>
-        <div className={hamburgerContainer}>
+        <div className={hamburgerContainer} onClick={() => setIsModalOpen(!isModalOpen)}>
           <div></div>
           <div></div>
           <div></div>
@@ -62,6 +66,7 @@ const Layout = ({ pageTitle, children }) => {
             </li>
           </ul>
         </nav>
+        {isModalOpen ? <CollapsibleNav></CollapsibleNav> : ''}
       <div className={container}>
         <main>
           {/* <h1 className={heading}>{pageTitle}</h1> */}
