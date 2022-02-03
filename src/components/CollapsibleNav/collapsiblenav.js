@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import { collapsibleNavContainer, collapsibleNav, navItemList, navItem, navLink } from './collapsiblenav.module.css';
+import { collapsibleNavContainer, collapsibleNav, navItemList, navItem, navLink, navOpen } from './collapsiblenav.module.css';
 
-const CollapsibleNav = () => {
+const CollapsibleNav = ({ isNavOpen }) => {
   return (
   <div className={collapsibleNavContainer}>
-    <div className={collapsibleNav}>
+    <div className={`${collapsibleNav}`}>
       <ul className={navItemList}>
         <li className={navItem}>
         <Link className={navLink} to="/">Home</Link>

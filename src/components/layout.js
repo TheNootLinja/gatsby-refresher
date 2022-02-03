@@ -22,6 +22,7 @@ import '../styles/global.css';
 
 const Layout = ({ pageTitle, children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   function handleNavClick () {
     setIsModalOpen(!isModalOpen);
     document.body.classList.toggle('menu-open');
@@ -72,7 +73,7 @@ const Layout = ({ pageTitle, children }) => {
             </li>
           </ul>
         </nav>
-        {isModalOpen ? <CollapsibleNav></CollapsibleNav> : ''}
+        {isModalOpen ? <CollapsibleNav/> : ''}
       <div className={container}>
         <main>
           {/* <h1 className={heading}>{pageTitle}</h1> */}
