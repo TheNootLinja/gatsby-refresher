@@ -1,21 +1,23 @@
-.collapsible-nav-container {
-  background: rgba(121, 121, 121, 0.5);
-  height: 100vh;
-  width: 100vw;
+.collapsible-nav {
+  height: 200px;
+  width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
+  border-radius: 0 0 40px 40px;
+  top: -200px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
-.collapsible-nav {
+.collapsible-nav-open {
   height: 200px;
   width: 100%;
   background: #7a04eb;
   position: fixed;
   z-index: 2;
   border-radius: 0 0 40px 40px;
-  /* top: 45px; */
-  top: -200px;
-  transition: all 0.2s;
+  top: 45px;
+  transition: all 0.5s;
 }
 
 .nav-item-list {

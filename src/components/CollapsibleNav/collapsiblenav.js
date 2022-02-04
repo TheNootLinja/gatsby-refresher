@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'gatsby';
 
-import { collapsibleNavContainer, collapsibleNav, navItemList, navItem, navLink, navOpen } from './collapsiblenav.module.css';
+import { collapsibleNavContainer, collapsibleNav, collapsibleNavOpen, navItemList, navItem, navLink, navOpen, closed } from './collapsiblenav.module.css';
 
 const CollapsibleNav = ({ isNavOpen }) => {
   return (
-  <div className={collapsibleNavContainer}>
-    <div className={`${collapsibleNav}`}>
+    <div className={isNavOpen ? collapsibleNavOpen : collapsibleNav}>
       <ul className={navItemList}>
         <li className={navItem}>
         <Link className={navLink} to="/">Home</Link>
@@ -19,7 +18,6 @@ const CollapsibleNav = ({ isNavOpen }) => {
         </li>
       </ul>
     </div>
-  </div>
   )
 };
 

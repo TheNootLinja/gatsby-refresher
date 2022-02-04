@@ -16,7 +16,9 @@ import {
   navBar,
   navDivider,
   hamburgerContainer,
-  menuOpen
+  menuOpen,
+  modalOpen,
+  modalClosed
 } from './layout.module.css';
 import '../styles/global.css';
 
@@ -39,6 +41,7 @@ const Layout = ({ pageTitle, children }) => {
   `);
   return (
     <div className={parentContainer}>
+        <div className={isModalOpen ? modalOpen : modalClosed}></div>
         <title>{pageTitle}</title>
         <nav className={navBar}>
         <Link to="/">
@@ -73,7 +76,7 @@ const Layout = ({ pageTitle, children }) => {
             </li>
           </ul>
         </nav>
-        {isModalOpen ? <CollapsibleNav/> : ''}
+      <CollapsibleNav isNavOpen={isModalOpen}/>
       <div className={container}>
         <main>
           {/* <h1 className={heading}>{pageTitle}</h1> */}
