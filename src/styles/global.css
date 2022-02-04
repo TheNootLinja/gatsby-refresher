@@ -25,3 +25,7 @@ h6 {
 .about-content {
   font-size: 1.25rem;
 }
+
+.menu-open {
+  overflow: hidden;
+}

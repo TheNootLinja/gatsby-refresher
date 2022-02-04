@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+
+import CollapsibleNav from './CollapsibleNav/collapsiblenav';
+
 import {
   parentContainer,
   container,
@@ -12,11 +15,21 @@ import {
   contentContainer,
   navBar,
   navDivider,
-  hamburgerContainer
+  hamburgerContainer,
+  menuOpen,
+  modalOpen,
+  modalClosed
 } from './layout.module.css';
 import '../styles/global.css';
 
 const Layout = ({ pageTitle, children }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  function handleNavClick () {
+    setIsModalOpen(!isModalOpen);
+    document.body.classList.toggle('menu-open');
+    window.scrollTo(0,0);
+  }
   const data = useStaticQuery(graphql`
     query MyQuery {
       site {
@@ -28,12 +41,13 @@ const Layout = ({ pageTitle, children }) => {
   `);
   return (
     <div className={parentContainer}>
+        <div className={isModalOpen ? modalOpen : modalClosed}></div>
         <title>{pageTitle}</title>
         <nav className={navBar}>
         <Link to="/">
           <header className={siteTitle}>{data.site.siteMetadata.title}</header>
         </Link>
-        <div className={hamburgerContainer}>
+        <div className={hamburgerContainer} onClick={handleNavClick}>
           <div></div>
           <div></div>
           <div></div>
@@ -62,6 +76,7 @@ const Layout = ({ pageTitle, children }) => {
             </li>
           </ul>
         </nav>
+      <CollapsibleNav isNavOpen={isModalOpen}/>
       <div className={container}>
         <main>
           {/* <h1 className={heading}>{pageTitle}</h1> */}
