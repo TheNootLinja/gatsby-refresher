@@ -79,7 +79,6 @@ const Layout = ({ pageTitle, children }) => {
       <CollapsibleNav isNavOpen={isModalOpen}/>
       <div className={container}>
         <main>
-          {/* <h1 className={heading}>{pageTitle}</h1> */}
           <div className={contentContainer}>
             {children}
           </div>

@@ -7,6 +7,7 @@ const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
       <div className={imageContainer}>
+        {/* Need photo for top of this page */}
         <StaticImage
           className={aboutPageImg}
           alt="Bridge over water lit up with neon lighting"
@@ -15,7 +16,6 @@ const AboutPage = () => {
         <h1 className={pageHeader}>About the Blog</h1>
       </div>
       <div className={aboutContainer}>
-        {/* Need photo for top of this page */}
         <p className="about-content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet posuere elit, 
         sit amet mollis turpis varius a. Ut at ante quis tellus egestas feugiat id at tortor. 
