@@ -30,6 +30,7 @@ const Layout = ({ pageTitle, children }) => {
     document.body.classList.toggle('menu-open');
     window.scrollTo(0,0);
   }
+
   const data = useStaticQuery(graphql`
     query MyQuery {
       site {
