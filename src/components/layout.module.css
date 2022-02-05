@@ -72,7 +72,7 @@
   align-items: center;
   justify-content: space-around;
   height: 45px;
-  background-color: #7a04eb;
+  background: #7a04eb;
   padding-left: 30px;
   transform-origin: center;
   z-index: 3;

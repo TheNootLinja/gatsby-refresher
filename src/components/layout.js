@@ -30,6 +30,12 @@ const Layout = ({ pageTitle, children }) => {
     document.body.classList.toggle('menu-open');
     window.scrollTo(0,0);
   }
+
+  function handleNavLinkClick () {
+    setIsModalOpen(!isModalOpen);
+    document.body.classList.toggle('menu-open');
+  }
+
   const data = useStaticQuery(graphql`
     query MyQuery {
       site {
@@ -76,7 +82,7 @@ const Layout = ({ pageTitle, children }) => {
             </li>
           </ul>
         </nav>
-      <CollapsibleNav isNavOpen={isModalOpen}/>
+      <CollapsibleNav onLinkClick={handleNavLinkClick} isNavOpen={isModalOpen}/>
       <div className={container}>
         <main>
           <div className={contentContainer}>

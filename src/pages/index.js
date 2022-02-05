@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
@@ -6,6 +6,9 @@ import { homepageImg, contentContainer, pageHeader, pageHeaderSub, blogTitle, bl
 
 const IndexPage = ({ data }) => {
   const recentBlogs = data.allMdx.nodes;
+  // useEffect(() => {
+  //   document.body.classList.remove('menu-open');
+  // })
   return (
       <div className="index-page">
         <Layout pageTitle="Home Page">
