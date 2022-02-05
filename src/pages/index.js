@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
-import Footer from '../components/footer/footer'
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import { homepageImg, contentContainer, pageHeader, pageHeaderSub, blogTitle, blogDate, heroImage, blogSectionHeader, sectionDivider, imageContainer } from './index.module.css';
 

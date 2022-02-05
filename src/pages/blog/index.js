@@ -12,7 +12,7 @@ const BlogPage = ({ data }) => {
             <StaticImage
               className={bloglistPageImg}
               alt="Bridge over water lit up with neon lighting"
-              src="../../images/aboutpg.jpg"
+              src="../../images/bloglistpg.jpg"
             />
             <h1 className={pageHeader}>What you came for</h1>
           </div>

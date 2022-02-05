@@ -24,12 +24,6 @@
   font-family: sans-serif;
 }
 
-/* .content-container p {
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-} */
-
 .nav-links {
   display: flex;
   list-style: none;
@@ -62,8 +56,6 @@
   font-size: 1.8rem;
   color: #fff;
   font-weight: 700;
-  /* margin: 1.5rem 0 15px 15vw; */
-  /* font-family: 'Neonderthaw', cursive; */
   font-family: 'Permanent Marker', cursive;
   text-shadow: 0 0 7px #ff00a0, 0 0 10px #fe75fe, 0 0 21px #fe75fe,
     0 0 42px #fe75fe;
@@ -76,13 +68,12 @@
 }
 
 .nav-bar {
-  display: flex; /* new */
+  display: flex;
   align-items: center;
   justify-content: space-around;
   height: 45px;
   background-color: #7a04eb;
   padding-left: 30px;
-  /* box-shadow: inset 0 20px 20px -20px #ff00a0; */
   transform-origin: center;
   z-index: 3;
 }
@@ -105,7 +96,6 @@
 }
 
 .hamburger-container div {
-  /* display: none; */
   height: 8px;
   width: 40px;
   margin-bottom: 4px;
@@ -123,8 +113,6 @@
     font-size: 1.5rem;
     text-align: left;
     width: 90%;
-    /* margin-left: 0; */
-    /* margin-right: auto; */
   }
 
   .nav-bar {
@@ -132,17 +120,9 @@
     padding-left: 0px;
   }
 
-  .nav-links {
-    /* padding-left: 0;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto; */
-  }
-
   li:last-of-type {
     padding-right: 0;
   }
-  /* Adjust navmenu for mobile to avoid overflow */
 }
 /* Write styling for tablet */
 @media only screen and (max-width: 750px) {
@@ -164,7 +144,4 @@
   .hamburger-container {
     display: block;
   }
-  /* .hamburger-container div {
-    display: block;
-  } */
 }
