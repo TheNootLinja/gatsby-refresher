@@ -23,14 +23,13 @@
 }
 
 .blog-title {
-  margin: 0;
+  margin: 20px 0 10px 10px;
   margin-left: 5px;
   color: #ff00a0;
 }
 
 .blog-date {
-  margin: 0;
-  margin-left: 30px;
+  margin: 0 0 10px 30px;
   color: #fff;
 }
 
@@ -49,6 +48,7 @@ article {
 
 .bloglist-container {
   width: 100%;
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 980px) {
