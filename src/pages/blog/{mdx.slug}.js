@@ -14,7 +14,9 @@ const BlogPost = ({ data }) => {
       <a href={data.mdx.frontmatter.hero_image_credit_link}>{data.mdx.frontmatter.hero_image_credit_text}</a>
     </p>
     <p>Posted: {data.mdx.frontmatter.date}</p>
-    <MDXRenderer>{data.mdx.body}</MDXRenderer>
+    <div className="blog-text-content">
+      <MDXRenderer>{data.mdx.body}</MDXRenderer>
+    </div>
   </Layout>;
 };
 

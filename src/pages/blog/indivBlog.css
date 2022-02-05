@@ -8,6 +8,11 @@
   width: 100%;
 }
 
+.blog-text-content {
+  margin: 0;
+  padding: 0 5px;
+}
+
 @media only screen and (max-width: 475px) {
   .indiv-hero-img {
     height: 150px;
