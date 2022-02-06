@@ -9,12 +9,11 @@ const BlogPost = ({ data }) => {
   const heroImage = getImage(data.mdx.frontmatter.hero_image);
   return <Layout pageTitle={data.mdx.frontmatter.title}>
     <GatsbyImage className='indiv-hero-img' image={heroImage} alt={data.mdx.frontmatter.hero_image_alt}/>
-    <p>
-      Photo Credit: {" "}
-      <a href={data.mdx.frontmatter.hero_image_credit_link}>{data.mdx.frontmatter.hero_image_credit_text}</a>
-    </p>
-    <p>Posted: {data.mdx.frontmatter.date}</p>
     <div className="blog-text-content">
+    <h1 className="blog-title">
+      {data.mdx.frontmatter.title}
+    </h1>
+    <p className="blog-date">Posted: {data.mdx.frontmatter.date}</p>
       <MDXRenderer>{data.mdx.body}</MDXRenderer>
     </div>
   </Layout>;
