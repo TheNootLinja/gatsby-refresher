@@ -20,7 +20,9 @@ const AboutPage = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet posuere elit, 
         sit amet mollis turpis varius a. Ut at ante quis tellus egestas feugiat id at tortor. 
         Proin vitae efficitur odio, eu facilisis sem. Fusce eu maximus purus. Maecenas vulputate 
-        venenatis fermentum. Praesent massa nisl, rutrum id sapien eget, semper porttitor turpis. 
+        venenatis fermentum. Praesent massa nisl, rutrum id sapien eget, semper porttitor turpis.
+        <br /> 
+        <br /> 
         Duis ultricies mauris a purus viverra sagittis. Donec semper in nunc sed euismod. Donec 
         rhoncus lobortis ex non dignissim. Nullam pharetra turpis eros, lacinia volutpat ex semper 
         quis. Mauris in lorem vitae urna accumsan semper. Pellentesque tincidunt ultrices risus quis 

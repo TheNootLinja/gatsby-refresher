@@ -5,12 +5,25 @@
 .indiv-hero-img {
   margin: auto;
   height: 300px;
-  width: 100%;
+  width: 100vw;
+}
+
+.blog-title {
+  margin: 0;
+  margin-left: 5px;
+  color: #ff00a0;
+  font-size: 1.5rem;
+}
+
+.blog-date {
+  color: red;
 }
 
 .blog-text-content {
-  margin: 0;
+  margin: 20px auto 0 auto;
   padding: 0 5px;
+  max-width: 900px;
+  /* display: none; */
 }
 
 @media only screen and (max-width: 475px) {
